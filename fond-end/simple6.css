@@ -1,0 +1,66 @@
+
+.khoi-trang-chu{
+	width: 100%;
+	height: 250px;
+	background-color: #EEEEEE;
+	margin-bottom: 10px;
+	padding: 20px;
+	border-bottom: 1px solid black ;
+	border-top:  1px solid black ;
+	/*text-align: 60px;*/
+	margin-top: 10px;
+
+}
+.khoi-trang-chu a{
+	text-decoration: none;
+}
+.tin-bai{
+	width: 100%;
+	font-size: 30px;
+	text-align: center;
+	background-color: 	#CC00FF;
+	color: white;
+}
+.noi-dung{
+	float: right;
+	padding-right: 20px;
+}
+.doan{
+	font-size: 20px;
+	/*font-weight: bold;*/
+	font-family: TimeNewRomen;
+	/*text-decoration: underline;*/
+	line-height: 20px;
+	color: black;
+
+
+}
+.image{
+	width: 200px;
+	height: 100px;
+	float: left;
+	padding-right: 30px;
+}
+.khoilon{
+	
+	/*width: 810px;*/
+	width: 100%;
+	height: 710px;
+	background-color: white;
+}
+.icon i{
+	font-size: 64px;
+	color: white;
+	background-color: transparent;
+	text-align: center;
+}
+.mau{
+	color: blue;
+}
+.doan:hover{
+	color: 	#CC00FF;
+}
+.image:hover{
+	margin-top: 5px;
+	transition: 0.4s;
+}

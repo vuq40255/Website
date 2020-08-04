@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giao diện trang chủ</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="trangchu.css">
+	
+	<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="index.css">
+	
+</head>
+<body>
+	<div class="khung-to">
+		<div class="khung1">
+			<div class="khung1-1">Kênh người bán</div>
+			<div class="khung1-1">Kết nối <i class="fa fa-facebook-f"></i> <i class="fa fa-instagram"></i></div>
+
+			<div class="khung1-2">
+				<div class="khung122">Đăng Nhập</div>
+				<div class="khung122">Đăng Ký</div>
+			</div>
+			<div class="hinhanh khung1222">
+				<img src="https://vipeyepro.vn/tp/T0049/img/shopping_cart.png">
+			</div>
+
+			<div class="timkiem khung1222">
+				<div class="row">
+			    
+				    <div class="col-75">
+				      	<input type="text" id="fname" name="firstname" placeholder="Tìm kiếm... ">
+				    </div>
+			  	</div>
+			</div>
+
+			<div class="icon khung1222">
+				<i class="fa fa-shopping-cart"></i>
+			</div>
+		</div>
+	</div>
+
+	<div class="khungto2">
+		<div class="the">Ngành hàng</div>
+		<div class="the">Loại hàng</div>
+		<div class="the">Tin tức</div>
+		<div class="the">Sản phẩm nổi bật</div>
+		<div class="the">Khác</div>
+	</div>
+
+	<div class="khungto3">
+		<p class="danhmuc">Danh mục</p>
+		<div class="chia-nho">
+			<img class="anh-nho" src="https://wego.net.vn/wp-content/uploads/2020/06/ao-dong-phuc-hop-lop-truong-thcs-luong-phong-1.jpg"><br>
+			<p class="ten-sp">Quần áo</p>
+		</div>
+		<div class="chia-nho">
+			<img class="anh-nho" src="https://file.hstatic.net/1000288768/file/uhv-2.95-bong-dong-luc-3-500x500_grande.jpg"><br>
+			<p class="ten-sp">Thể thao</p>
+		</div>
+		<div class="chia-nho">
+			<img class="anh-nho" src="https://dienmaycholon.vn/public/userupload/images/laptop%20c%C3%B3%20m%C3%A0n%20h%C3%ACnh%203D%202(1).jpg"><br>
+			<p class="ten-sp">Thiết bị điện tử</p>
+		</div>
+		<div class="chia-nho">
+			<img class="anh-nho" src="https://cdn.vatgia.vn/pictures/fullsize/2012/11/29/jyr1354174673.jpg"><br>
+			<p class="ten-sp">Đồ gia dụng</p>
+		</div>
+		<div class="chia-nho">
+			<img class="anh-nho" src="https://static.viettelstudy.vn/upload/17975/20200420/logo-sach_61__6e256.jpg"><br>
+			<p class="ten-sp">Sách</p>
+		</div>
+		<div class="chia-nho">
+			<img class="anh-nho" src="https://s4.nhattao.com/data/attachment-files/2020/07/15301341_xe-may-honda-sh-2020-9.jpg"><br>
+			<p class="ten-sp">Ô tô - Xe máy</p>
+		</div>
+	</div>
+
+	<div class="khungto4">
+		<div class="slideshow-container">
+  
+		  <div class="mySlides fade">
+		    <img src="https://bibomart.com.vn/media/wysiwyg/bibomart_landing-page/00_1.png" style="width:100%" >
+		    
+		  </div>
+		 
+		  <div class="mySlides fade">
+		    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRakELk5_Wct-vrEKha5JlODf-ErvkWvjgKWQ&usqp=CAU" style="width:100%">
+		    
+		  </div>
+		 
+		  <div class="mySlides fade">
+		    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTGCmcBmosXRlJ1_9Kch-vSnzTOnCJixTIVHQ&usqp=CAU" style="width:100%">
+		    
+		  </div>
+		</div>
+		<br>
+		 
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(0)"></span> 
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		</div>
+
+		<script>
+		  //khai báo biến slideIndex đại diện cho slide hiện tại
+		  var slideIndex;
+		  // KHai bào hàm hiển thị slide
+		  function showSlides() {
+		      var i;
+		      var slides = document.getElementsByClassName("mySlides");
+		      var dots = document.getElementsByClassName("dot");
+		      for (i = 0; i < slides.length; i++) {
+		         slides[i].style.display = "none";  
+		      }
+		      for (i = 0; i < dots.length; i++) {
+		          dots[i].className = dots[i].className.replace(" active", "");
+		      }
+		 
+		      slides[slideIndex].style.display = "block";  
+		      dots[slideIndex].className += " active";
+		      //chuyển đến slide tiếp theo
+		      slideIndex++;
+		      //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+		      if (slideIndex > slides.length - 1) {
+		        slideIndex = 0
+		      }    
+		      //tự động chuyển đổi slide sau 5s
+		      setTimeout(showSlides, 5000);
+		  }
+		  //mặc định hiển thị slide đầu tiên 
+		  showSlides(slideIndex = 0);
+		 
+		 
+		  function currentSlide(n) {
+		    showSlides(slideIndex = n);
+		  }
+		</script>
+	</div>
+	<div class="khungto5">
+		<dir class="sanphamhot">
+			<h3>Gợi ý hôm nay</h3>
+		</dir>
+
+		<div class="chia-nho nho">
+			<img class="anh-nho nho" src="https://cdn.tgdd.vn/Products/Images/44/217320/asus-vivobook-a512fl-i5-10210u-8gb-512gb-2gb-mx250-600x600.jpg"><br>
+			<p class="ten-sp nho">Laptop ASUS A512DA...</p>
+			<p class="ten-sp col nho">đ11.500.000</p>
+		</div>
+		<div class="chia-nho nho">
+			<img class="anh-nho nho" src="https://five.vn/uploads/market/attachment/42/421/4217-5d09afe2f27a7.jpg"><br>
+			<p class="ten-sp nho">Dép cối uzzang đi biển trắng đen..</p>
+			<p class="ten-sp col nho">đ115.000</p>
+		</div>
+		<div class="chia-nho nho">
+			<img class="anh-nho nho" src="https://healthvietnam.vn/photos/177/khau-trang-3-lop.PNG"><br>
+			<p class="ten-sp nho">Khẩu trang y tế 4 lớp|4 hộp...</p>
+			<p class="ten-sp col nho">đ190.000</p>
+		</div>
+		<div class="chia-nho nho">
+			<img class="anh-nho nho" src="https://www.kosmebox.com/image/cache/data/Romand/son-li-sieu-nhe-moi-romand-zero-gram-matte-lipstick/Romand-Zero-Gram-Matte-Lipstick-500x500.jpg"><br>
+			<p class="ten-sp nho">Son lì roman siêu nhẹ môi...</p>
+			<p class="ten-sp col nho">đ170.000</p>
+		</div>
+		<div class="chia-nho nho">
+			<img class="anh-nho nho" src="https://giaythainguyen.com/wp-content/uploads/2018/09/41558906_1497827470349517_4891525840958914560_n.jpg"><br>
+			<p class="ten-sp nho">Giày Adidas Ultraboot Full White</p>
+			<p class="ten-sp col nho">đ310.000</p>
+		</div>
+
+		<!--  -->
+		<div class="chia-nho nho">
+			<img class="anh-nho nho" src="https://gafa.vn/wp-content/uploads/2018/08/Top-10-m%E1%BA%ABu-Gi%C3%A0y-cao-g%C3%B3t-%C4%91%C3%ADnh-%C4%91%C3%A1-l%E1%BA%A5p-l%C3%A1nh6.jpg"><br>
+			<p class="ten-sp nho ">Giày cao gót đính đá cao cấp</p>
+			<p class="ten-sp col nho">đ460.000</p>
+		</div>
+		<div class="chia-nho nho">
+			<img class="anh-nho nho" src="https://images-gogogo-vn.r.worldssl.net/products-thumbs/555/555/2017/08/0e33ae930265982cba050a56/giay-bup-be-xinh-xan-cho-be-gai-3-10-tuoi-ga14.jpg"><br>
+			<p class="ten-sp nho">Giày búp bê cho bé GBG0B30</p>
+			<p class="ten-sp col nho">đ180.000</p>
+		</div>
+		<div class="chia-nho nho">
+			<img class="anh-nho nho" src="https://file.yes24.vn/Upload/ProductImage/GmarketWomen2/2038271_L.jpg"><br>
+			<p class="ten-sp nho">Chân váy voan dài Fashion Full..</p>
+			<p class="ten-sp col nho">đ490.000</p>
+		</div>
+		<div class="chia-nho nho">
+			<img class="anh-nho nho" src="https://cf.shopee.vn/file/3fc2c2ca6cbcc4f93d3d69ddf0cf7a96"><br>
+			<p class="ten-sp nho">Ốp lưng điện thoại IP6 đến X</p>
+			<p class="ten-sp col nho">đ150.000</p>
+		</div>
+		<div class="chia-nho nho">
+			<img class="anh-nho nho" src="https://media3.scdn.vn/img2/2018/12_7/20dz48_simg_de2fe0_500x500_maxb.jpg"><br>
+			<p class="ten-sp nho">Đồng hồ nam DIZIZI11 chống nước</p>
+			<p class="ten-sp col nho">đ900.000</p>
+		</div>
+		<!--  -->
+		<div class="chia-nho nho">
+			<img class="anh-nho nho" src="https://namfashion.com/home/wp-content/uploads/2018/09/ao-so-mi-nam-ke-soc-tam-hang-hieu-scotch-soda-xuat-khau-1.jpg"><br>
+			<p class="ten-sp nho ">Áo sơ mi nam tay dài</p>
+			<p class="ten-sp col nho">đ350.000</p>
+		</div>
+		<div class="chia-nho nho">
+			<img class="anh-nho nho" src="https://ae01.alicdn.com/kf/Habf34bed84154ee9a333091385c1c398v/o-Hoodie-N-Nam-Hip-Hop-o-Thun-C-o-Kho-c-D-o-Ph.jpg_q50.jpg"><br>
+			<p class="ten-sp nho">Áo Hoodie Nam</p>
+			<p class="ten-sp col nho">đ562.000</p>
+		</div>
+		<div class="chia-nho nho">
+			<img class="anh-nho nho" src="https://mubaohiemdochanoi.com/wp-content/uploads/2020/01/add.jpg"><br>
+			<p class="ten-sp nho">Mũ bảo hiểm nửa đầu</p>
+			<p class="ten-sp col nho">đ280.000</p>
+		</div>
+		<div class="chia-nho nho">
+			<img class="anh-nho nho" src="https://cdn.tgdd.vn/Products/Images/54/187374/tai-nghe-bluetooth-kanen-k6-avatar-600x600.jpg"><br>
+			<p class="ten-sp nho">Tai nghe bluetooth K6</p>
+			<p class="ten-sp col nho">đ600.000</p>
+		</div>
+		<div class="chia-nho nho">
+			<img class="anh-nho nho" src="https://cdn.tgdd.vn/Products/Images/54/74185/tai-nghe-chup-tai-kanen-ip-2090-trang-1-4-org.jpg"><br>
+			<p class="ten-sp nho">Tai nghe chụp tai AAES5</p>
+			<p class="ten-sp col nho">đ500.000</p>
+		</div>
+		<!--  -->
+		<div class="chia-nho nho">
+			<img class="anh-nho nho" src="https://vn-test-11.slatic.net/p/bf845f78e7d9d83f15cfda9b2b5d28be.png"><br>
+			<p class="ten-sp nho ">Chuột máy tính dây</p>
+			<p class="ten-sp col nho">đ150.000</p>
+		</div>
+		<div class="chia-nho nho">
+			<img class="anh-nho nho" src="https://cdn.tgdd.vn/Products/Images/75/148666/usb-31-16gb-apacer-ah356-4-1-org.jpg"><br>
+			<p class="ten-sp nho">USB 3.1 16 GB Apacer AH356</p>
+			<p class="ten-sp col nho">đ143.000</p>
+		</div>
+		<div class="chia-nho nho">
+			<img class="anh-nho nho" src="https://s.meta.com.vn/img/thumb.ashx/Data/image/product_images/Nam2012/Dogiadung/11/23/HPL823DG.jpg"><br>
+			<p class="ten-sp nho">Hộp đựng cơm HLH45-0</p>
+			<p class="ten-sp col nho">đ219.000</p>
+		</div>
+		<div class="chia-nho nho">
+			<img class="anh-nho nho" src="https://ae01.alicdn.com/kf/HTB19rXyaOfrK1RjSspbq6A4pFXa6/16GB-DDR2-ECC-Ho-n-To-n-m-RAM-8GB-667MHz-FB-DIMM-4GB-PC2-5300F.jpg_q50.jpg"><br>
+			<p class="ten-sp nho">Ram 8G 667Mhz</p>
+			<p class="ten-sp col nho">đ480.000</p>
+		</div>
+		<div class="chia-nho nho">
+			<img class="anh-nho nho" src="https://dathangsi.vn/upload/products/2019/11/0814-day-cot-toc-hoa-roi-.jpg"><br>
+			<p class="ten-sp nho">Dây buộc tóc hoa rơi</p>
+			<p class="ten-sp col nho">đ20.000</p>
+		</div>
+		
+	</div>
+
+	<div class="khungto6">
+		<div class="chia-nho kc">
+			<h3> MUA SẮM VÀ BÁN HÀNG ONLINE ĐƠN GIẢN, NHANH CHÓNG VÀ AN TOÀN</h3>
+			<p>Nếu bạn đang tìm kiếm một trang web để mua và bán hàng trực tuyến thì website của chúng tôi là một sự lựa chọn hiệu quả dành cho bạn. Bản chất của website là một social ecommerce platform - nền tảng trang web thương mại điện tử tích hợp mạng xã hội. Điều này cho phép người mua và người bán hàng dễ dàng tương tác, trao đổi thông tin về sản phẩm và chương trình khuyến mãi của shop. Nhờ nền tảng đó, việc mua bán trên web trở nên nhanh chóng và đơn giản hơn. Bạn có thể trò chuyện trực tiếp với nhà bán hàng để hỏi trực tiếp về mặt hàng cần mua. Còn nếu bạn muốn tìm mua những dòng sản phẩm chính hãng, uy tín, Shopee Mall chính là sự lựa chọn lí tưởng dành cho bạn. Đến với chúng tôi, cơ hội để trở thành một nhà bán hàng dễ dàng hơn bao giờ hết. Chỉ với vài thao tác trên ứng dụng, bạn đã có thể đăng bán ngay những sản phẩm của mình. Không những thế, các nhà bán hàng có thể tùy chọn các tính năng “Shop tạm nghỉ” hoặc tự tạo riêng cho mình một chương trình khuyến mãi để thu hút người mua với những sản phẩm có mức giá hấp dẫn. Khi đăng nhập tại  Kênh người bán, bạn có thể dễ dàng phân loại sản phẩm, theo dõi đơn hàng, chăm sóc khách hàng và cập nhập ngay các hoạt động của shop.</p>
+		</div>
+		<dir class="chia-nho kc">
+			<h3>Chăm sóc khách hàng</h3>
+			
+			<li>Tung tâm trợ giúp</li>
+			<li>Hướng dẫn mua hàng</li>
+			<li>Hướng dẫn bán hàng</li>
+			<li>Chính sách bảo hành</li>
+			<li>Shop mall</li>
+			
+		</dir>
+		<div class="chia-nho kc">
+			<h3>Theo dõi chúng tôi trên</h3>
+			
+			<li>facebook <i class="fa fa-facebook-f"></i></li>
+			<li>instagram <i class="fa fa-instagram"></i></li>
+		</div>
+	</div>
+</body>
+</html>

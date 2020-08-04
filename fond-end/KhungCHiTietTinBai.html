@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Xem chhi tiết tin bài</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="KhungCHiTietTinBai.css">
+</head>
+<body>
+	<div class="khunglon">
+		<div class="tieude">
+			ƯU ĐÃI LÊN ĐẾN 50% TẤT CẢ SẢN PHẨM VASCARA CHỈ CÓ TẠI TAKASHIMAYA
+		</div>
+		<div class="ngaydang">
+			28/07/2020
+		</div>
+		<div class="hinhanh">
+
+			<script type="text/javascript">
+				var i =0;
+				var images = [];
+				var time = 3000;
+
+				//Image list
+				images[0] = 'https://www.brandsvietnam.com/upload/news/480px/2018/15445_SaleOff.png';
+				images[1] = 'https://vcdn-kinhdoanh.vnecdn.net/2019/08/02/1-8-201917-w500-6000-1564738552.png';
+				images[2] = 'https://stc.shopiness.vn/deal/2019/08/09/9/2/2/e/1565324007327_540.png';
+
+				// change image
+				function changeImage(){
+					document.slide.src = images[i];
+					if(i < images.length -1){
+						i++;
+					}else{
+						i =0;
+					}
+					setTimeout("changeImage()",time);
+				}
+				window.onload = changeImage
+			</script>
+
+			<img name="slide" width="300">
+		</div>
+
+		<div class="noidung">
+			<p class="dong1">Hòa mình cùng những âm thanh hè nhiệt huyết, Vascara dành tặng riêng cho khách hàng ưu đãi cực kỳ lớn lên đến 50% tất cả sản phẩm và nhiều sản phẩm đồng giá từ ngày 19.07 đến 24.07.2018 áp dụng tại Vascara Takashimaya</p>
+
+			<p>Thời gian áp dụng: từ ngày 1/8 đến 8/8/2020</p>
+
+			<p>Địa điểm áp dụng: Chương trình chỉ áp dụng tại gian hàng Vascara, khu sự kiện tầng 3, Takashimaya, 92-94 Nam Kỳ Khởi Nghĩa, Bến Nghé, Quận 1, Tp. Hồ Chí Minh</p>
+
+			<p>Điều kiện áp dụng:</p>
+
+     		<p>- Khách hàng mới vui lòng điền đầy đủ thông tin để nhận ưu đãi từ chương trình.<br>
+
+     		- Không áp dụng với thẻ VIP và thẻ đối tác.<br>
+
+     		- Không áp dụng với tất cả Phiếu quà tặng<br>
+
+    		- Không áp dụng với các chương trình khuyến mãi khác.<br>
+
+     		- Trong mọi trường hợp, quyết định của Vascara là quyết định cuối cùng.</p>
+
+			<p>Nhanh tay tới ngay Vascara sắm ngay những sản phẩm giày túi cực chất cho mùa lễ hội sắp tới nào! MUA NGAY!</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,235 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: #E7E7E7;
+}
+.khung-to{
+	/*border: 1px solid black;*/
+	width: 100%;
+}
+
+.khung1{
+	width: 100%;
+	height: 150px;
+	background-color: #CC66FF;
+	color: white;
+	padding-top: 10px;
+}
+.khung1-1{
+	background-color: transparent;
+	float: left;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-right: 1px solid black;
+}
+.khung1-1 i{
+	background-color: transparent;
+}
+.khung1-2{
+	background-color: transparent;
+	float: right;
+	padding-right: 10px;
+	padding-left: 10px;
+	/*border-right: 1px solid black*/
+}
+.khung122{
+	background-color: transparent;
+	float: right;
+	padding-right: 50px;
+	padding-left: 10px;
+	font-size: 20px;
+}
+.hinhanh{
+	background-color: transparent;
+}
+.hinhanh img{
+	width: 80px;
+	background-color: #CC66FF;
+	padding-top: 50px;
+}
+
+
+
+
+input[type=text], select, textarea {
+	width: 126%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #58257b;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 0px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+.col-75 {
+  float: left;
+  width: 380px;
+  margin-top: 0px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.timkiem{
+	margin-left: 350px;
+	margin-top: -70px;
+	margin-right: 405px;
+}
+.icon{
+	background-color: transparent;
+	margin-top: -70px 
+}
+.icon i{
+	padding-left: 886px;
+	background-color: transparent;
+	font-size: 40px;
+}
+.khung1222{
+	background-color: transparent;
+	float: left;
+	padding-right: 50px;
+	padding-left: 10px;
+	font-size: 20px;
+}
+.khungto2{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.the{
+	float: left;
+	width: 258px;
+	height: 40px;
+	border: 1px solid #CC66FF;
+	text-align: center;
+	padding-top: 10px;
+	font-family: arial;
+	background-color: #66CC99;
+}
+.khungto3{
+	display: block;
+	margin-left: 5px;
+	margin-right: 12px;
+	height: 300px;
+	/*border: 1px solid #CC66FF;
+*/	background-color: white;
+margin-top: 50px;
+}
+
+.danhmuc{
+	background-color: transparent;
+	font-size: 20px;
+	font-weight: bold;
+	color: #white;
+	padding-left: 70px;
+	padding-top: 20px;
+	border-bottom: 1px solid #CC66FF;
+
+
+}
+.anh-nho{
+	margin-top: 20px;
+	width: 150px;
+	height: 150px;
+	margin-left: 60px;
+
+}
+.ten-sp{
+	margin-left: 60px;
+	width: 150px;
+	background-color: transparent;
+	text-align: center;
+}
+.chia-nho{
+	float: left;
+	background-color: transparent;
+}
+.khungto4{
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-left: 200px;
+	width: 70%;
+
+}
+.slide1{
+	float: left;
+	background-color: transparent;
+	/*width: 200px;
+	height: 200px;*/
+	padding-left: 100px;
+}
+.slide1 img{
+	width: 150px;
+}
+.khungto5{
+	width: 100%;
+	height: 980px;
+	background-color: white;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 230px;
+}
+.sanphamhot{
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: white;
+	border-bottom: 2px solid #CC66FF;
+	padding-top: 5px ;
+	padding-bottom: 5px 
+}
+.sanphamhot h3{
+	background-color: #CC66FF;
+	display: inline;
+	color: white;
+	padding: 5px 10px;
+}
+.col{
+	color: red;
+}
+.nho{
+	margin-right: 30px;
+	margin-left: 24px;
+}
+.khungto6{
+	width: 100%;
+	height: 200px;
+	
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-right: 20px;
+	margin-top: 20px;
+}
+.kc{
+	margin-top: 20px;
+	padding-top: 20px;
+	background-color: transparent;
+	margin-left: 50px;
+}
+.kc{
+	font-size: 15px;
+}
